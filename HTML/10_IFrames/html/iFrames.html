@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrames</title>
+    <!--
+        Los iframes son elementos utilizados para mostrar en una ventana la información de una pagina web, o doc html
+    -->
+</head>
+<body>
+    <!-- Vamos a google maps y buscamos una ubicación, en el menu le damos a compartir ubicacion y copiamos el  html-->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1518.8526825616973!2d-3.708280291725886!3d40.4153774369804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287ed85fe0d9%3A0xd202c4f0d67625e8!2sPlaza%20Mayor%2C%20Madrid!5e0!3m2!1ses!2ses!4v1663573305998!5m2!1ses!2ses"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!--Creamos un iFrame de nuestro html de tablas-->
+        <iframe src="../../Tablas/html/tablas.html" width="400" height="300" name="tabla" frameborder="1" scrolling="no">
+        </iframe>
+
+        <hr>
+
+       <a href="../../ElementosBloque_Frase_Vacios_Citar/html/elementoCitar.html" target="tabla"> ir a documentos de cita</a> <!--se abrirá en el iframe, por lo que solo se cambiará la parte del iframe y todo lo demás seguirá igual-->
+</body>
+</html>

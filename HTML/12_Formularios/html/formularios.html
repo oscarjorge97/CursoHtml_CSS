@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <!--Los formularios son usados para recopilar informacion de los usuarios y se necesitan guardar-->
+</head>
+<body>
+    <form action="ejemplo.php" method="get">
+    <!--El atributo action es el lugar en el que se van a procesar los datos capturados en el formulario, lo más usual es usar un script de algún tipo para que procese esos datos-->
+    
+    <!--El atributo method="get" o "post"  es la manera en la que se van a enviar esos datos -->
+    <!--El metodo get se usa cuando la información a enviar es corto, y va a viajar de manera pública y solo envía 8192 bytes.-->
+    <!--El otro método es post, cuando se adjuntan archivos, o la cantidad de información supera lo que soporta el get y viajan ocultos-->
+
+        Nombre: <input type="text" name="usuario" size="15" maxlength="30"> 
+        <br><!--size para indicar cuantos caracteres tiene, y maxlength para indicar el maximo de caracteres-->
+        Contraseña: <input type="password" name="password" size="15" maxlength="10">
+        <br><!--con el tipo password se ocultan los caracteres-->
+        Comentarios: <br> <textarea name="comentarios"  cols="30" rows="10"></textarea> <!-- cols columnas, rows filas-->
+        <hr>
+        Servicio de música: 
+        <br>
+        <!--checkbox para elementos de multiple seleccion-->
+        <input type="checkbox" name="Servicio" value="itunes" checked> iTunes <!--checked, para que venga seleccionado-->
+        <br> 
+        <input type="checkbox" name="Servicio" value="Lastfm"> Last.fm 
+        <br>
+        <input type="checkbox" name="Servicio" value="spotify"> Spotify 
+        <br>
+        <input type="checkbox" name="Servicio" value="itunes"> iTunes 
+
+        <hr>
+        Seleccione su género: <br>
+        <!--radio para elementos de una seleccion-->
+        <input type="radio" name="genero" value="masculino"> masculino
+        <br>
+        <input type="radio" name="genero" value="femenino"> femenino
+
+        <hr>
+        <!-- Menú de selección-->
+        seleccione el dispositivo que utiliza para escuchar música:
+        <select name="dispositivo"> <!-- select es una etiqueta que aparece como un menu desplegable-->
+            <option value="" selected>Dispositivo para escuchar música?</option>
+            <option value="ipod">iPod</option> <!-- option sirve para asignar opciones en el menu-->
+            <option value="radio">Radio</option>
+            <option value="pc">Pc</option>
+        </select> 
+
+
+        <hr>
+        <!-- Lista de selección-->
+        seleccione el dispositivo que utiliza para escuchar música:
+        <select name="dispositivo" size="4" multiple> <!-- select es una etiqueta que aparece como un menu desplegable-->
+                                                    <!-- multiple para poder seleccionar más de uno con la tecla control-->
+                                                    <!-- size si queremos que de primeras aparezcan todas las opciones indicar el numero de opciones que hay que mostrar-->
+            
+            <option value="" selected>Dispositivo para escuchar música?</option>
+            <option value="ipod">iPod</option> <!-- option sirve para asignar opciones en el menu-->
+            <option value="radio">Radio</option>
+            <option value="pc">Pc</option>  
+
+        </select>
+
+        
+        <hr>
+        <fieldset><!-- Muestra un cuadro que va a rodear a estos elementos-->
+            <legend>INFORMACIÓN</legend> <!-- el titulo del fieldset-->
+            <label for="edad">Edad:</label> <!-- si un discapacitado con un interprete de código sabría que ahí tiene que poner edad-->
+            <input type="text" name="edad">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+            <br>
+            <label for="celular">Celular:</label>
+            <input type="number" name="celular">
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="number" name="telefono">
+            <br>
+        </fieldset>
+        
+        <input type="submit" name="inscripcion" value="Inscripción"> <!-- El boton de enviar que conecta con el atributo action y lo envía a ese script-->
+
+    </form>
+</body>
+</html>
