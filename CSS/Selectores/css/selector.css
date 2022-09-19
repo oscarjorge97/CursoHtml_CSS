@@ -1,0 +1,48 @@
+@import url(../../Hojas_De_Estilo/css/Estilos_Importados.css);
+h2{color: darkcyan;}
+p{color: deeppink;}
+
+/*Selector universal*/
+*{font-family: arial;}
+
+/*Selector Etiqueta*/
+span{
+    color: darkgrey;
+}
+
+/*Selector Class*/
+.subrayado{
+    text-decoration: underline;
+}
+/* span.subrayado{      //solo para las etiquetas span con clase subrayado
+    text-decoration: underline;
+   }*/
+
+/*Selector Id   solo se debe aplicar a una etiqueta, ya que el id es único*/
+#mayusculas{
+    text-transform: uppercase;
+}
+/* h3#mayusculas {
+    text-transform: uppercase;
+}
+
+/*Selector Pseudo-Class*/
+a:link{ /*Link NO visitado*/
+    color: aquamarine;
+}
+a:visited{  /*Link VISITADO*/
+    color: rgb(20, 220, 83);
+}
+a:hover{ /*si el cursor está sobre el link*/
+    font-weight: bold; /*se agranda y se pone en negrita*/
+}
+a:active{   /*Si mantenemos presionado*/
+    color: blueviolet;
+}
+
+/*Selector de atributo*/
+img[alt="ojo"]{
+    width: 200px;
+    height: auto;
+
+}  /*A todas las imagenes que tengan el atributo titulo....

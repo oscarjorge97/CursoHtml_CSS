@@ -1,0 +1,10 @@
+@import url(Estilos_Importados.css);
+/*Aqui arriba importaremos un estilo, solo se puede importar en las primeras lineas, antes de empezar!*/
+h2{
+    color: darkcyan;
+}
+p{
+    color: deeppink;
+}
+
+
