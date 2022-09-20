@@ -1,0 +1,47 @@
+a:visited{
+    color: red;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; /*Si el SO busca arial y no lo encuentra entonces que continue con helvetica y si no con sans-serif*/
+    font-size: 20px; /*Tamaño de la fuente      16px==100%==1em*/ 
+    font-weight: bold; /*Grosor de la fuente    0==normal || 100==bold || 500==semi*/ 
+    font-style: italic;   /*Modificar el estilo de la fuente */
+    font-variant:small-caps ; /*Modificar el aspecto de la fuente, todo en mayusculas excepto la primera letra por ejemplo small-caps*/
+    line-height: 200%;  /*Permite modificar el espacio entre las lineas de texto*/
+    background-color: darkgrey; /*fondo*/
+
+    /*shorthand o método abreviado*/
+    /*font: italic small-caps bold 25px/200% arial, helvetica,sans-serif;*/
+
+}
+/*TEXTO*/
+p{
+    text-align: justify; /*justify,left,right,center*/
+    text-indent: 20px;  /*Me permite agregar sangría francesa al texto*/
+    text-transform: uppercase;   /*Permite transformar el texto por ejemplo de mayuscula a minuscula etc*/
+    text-decoration: line-through;  /*podemos subrayar, decorar el texto etc*/
+}
+
+a{
+    text-decoration: none;  /*Quitamos la linea de subrayado*/
+}
+
+img{
+    vertical-align: middle;    /*La primera linea estaría al lado de la imagen arriba.. baseline, top, middle,bottom,sub,sup*/
+}
+
+h2{
+    letter-spacing: 5px;    /*Espacio entre letra y letra*/
+    word-spacing: 5px;  /*Espacio entre palabras*/
+}
+
+/*Fondo*/
+body{
+    background-color: peachpuff;
+    background-image: url(../../../HTML/6_Imagenes/img/img2.jfif);  /*Ponemos una imagen de fondo*/
+    background-repeat: no-repeat;    /*Repetimos una imagen, repetir una imagen en eje x etc , repeat, no-repeat,repeat-x ..*/
+    background-position: center bottom;  /*Permite ubicar el fondo en un lugar relativo*/
+    background-position: 20% 50%;
+    background-attachment: scroll; /*scroll por si la pagina tiene scroll y se quede donde tiene que estar y fixed para que el fondo siempre este en su sitio aunque la pagina suba o baje*/
+}
