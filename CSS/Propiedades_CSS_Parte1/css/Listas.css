@@ -1,0 +1,12 @@
+ul{
+    font-size: 22px;
+    line-height: 150%;
+    padding: 30px;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+    list-style-type: georgian;  /*permite cambiar la viñeta(los puntos de la lista desordenada) de esta lista*/
+    /*list-style-image: url(../../../HTML/6_Imagenes/img/css.JPG); /* cambiamos la viñeta por una preparada*/
+    /*list-style-position: inside;*/ /*el inside sirve cuando tiene padding 0 por ejemplo*/
+    
+}

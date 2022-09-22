@@ -1,0 +1,22 @@
+div{
+    width: 200px;/*ancho*/
+    height: 200px;/*alto*/
+    background-color: grey;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: aqua;
+    display: inline-block; /*para que sigan en bloque pero a la vez en linea*/
+}
+
+span{
+    color: red;
+    font-weight: bold;
+    display: block;
+}
+
+#dos{
+    /*display: none;*//* lo desaparece, pero en el codigo todavía existe*/
+    visibility: hidden;/*ocupa el espacio, pero está en invisible*/
+    
+}

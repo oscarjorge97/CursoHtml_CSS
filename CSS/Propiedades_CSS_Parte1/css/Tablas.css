@@ -1,0 +1,21 @@
+table{
+    border-style: solid;
+    border-width: 4px;
+    border-color: darkblue;
+
+    width: 500px;
+    height: 500px;
+
+    /*empty-cells: hide;  /*oculta la celda, con sus bordes y todo*/
+    empty-cells: show;/*para mostrar la celda invisible*/
+    border-spacing: 30px;/*es el espacio que separa a las celdas, tambien puede ser primeros horizontales y luego verticales así: border- spacing: 15px 30px;*/
+    border-collapse: collapse;/*junta los bordes*/
+}
+
+td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: purple;
+    text-align: center;
+    font-size: 28px;
+}
