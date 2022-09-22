@@ -1,0 +1,38 @@
+/*Float vs Display: inline-block*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal{
+    width: 800px;
+    padding: 20px;
+    border: 2px dashed #3498DB;
+    margin: 20px auto;
+    color: grey;
+}
+
+div{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 25%;
+   /* float: right;*/
+   display: inline-block;/* tratará los elementos como textos y entre div y div dejará un espacio por lo que width 25 no llegará a ser un 100%*/
+}
+
+#div1{
+    background-color: orange;
+}
+#div2 {
+    background-color: green;
+}
+#div3 {
+    background-color: aquamarine;
+}
+#div4 {
+    background-color: magenta;
+}
+
+p{
+    clear: both;/*para que limpie el float en ambos lados*/
+}

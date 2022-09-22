@@ -1,0 +1,7 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3{     /*Para agrupar solo se debe separar por una coma*/
+    color: red;
+    text-decoration: underline;
+}

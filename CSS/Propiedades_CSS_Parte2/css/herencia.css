@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Selector padre*/
+/*Modificaremos todos los elementos hijos de alguien*/
+div p{
+    background-color: aqua; /*modificamos a los parrafos hijos de div indiferente de hijo directo o indirecto*/
+}
+
+div > p {   /*al añadir el signo indicamos que vamos a modificar a los hijos directos,el tercer parrafo es hijo indirecto por estar dentro de span*/
+    background-color: blue;
+}
+
+/*Selector adyacente general*/
+div~p{      /*modifica todos los elementos 'p' que estén fuera de un div*/
+    background-color: blueviolet;
+}
+
+/*Selector adyacente inmediato*/
+div +p{     /*Seleccionara el primero de los elementos 'p' que esté fuera de un elemento div*/
+background-color: magenta;
+}

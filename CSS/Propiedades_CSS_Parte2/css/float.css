@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#principal{
+    width: 800px;
+    padding: 20px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #3498DB;
+    margin: 20px auto;
+    color: grey;/*color*/
+}
+img{
+    width: 50%;
+    height: auto;/*para que sea proporcional*/
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+
+    float: right;/*para que la imagen se quede a la derecha y el texto se quede alineados y rodeando el texto*/
+}
+p{
+    line-height: 1.5;
+    margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+}

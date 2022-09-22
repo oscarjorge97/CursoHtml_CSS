@@ -1,0 +1,55 @@
+/*Position*/
+/*Todos los elementos del HTML tienen por defecto asignada la position "Static"
+/*
+-static
+-relative
+--absolute
+-fixed
+*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 800px;
+}
+
+#padre{
+width: 700px;
+height: 500px;
+
+border-width: 4px;
+border-style: solid;
+border-color: aqua;
+
+margin: 20px;
+margin: auto;/*Sirve para centrar el elemento*/
+
+padding: 20px;
+}
+
+#hijo{
+text-align: center;
+
+padding: 50px;
+
+background-color: grey;
+font-size: 2em;
+/*Al utilizar el relative podemos hacer uso del position top bottm right left, y podemos moverlo por toda la pagina*/
+/*position: relative;
+top:300px;
+left: 50px;
+*/
+/*Position absolute pierden el flujo en el que fueron creados en el html y va a tomar de referencia en este caso al padre, al estar dentro, de su esquina superior izq*/
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    
+}
+/*La position fixed depende del navegador, aunque esté dentro del padre y se queda fija en la pantalla aunque haya scroll*/
+#fija{
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(220,20,128,0.5);
+    font-size: 2em;
+    position: fixed;
+    top: 50px;
+    right: 450px;
+}
